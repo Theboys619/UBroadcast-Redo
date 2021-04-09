@@ -1,0 +1,37 @@
+.controls audio {
+  display: none;
+}
+
+.controls {
+  display: grid;
+
+  grid-template-rows: 100%;
+  grid-template-columns: 40px 40px auto 125px 40px;
+}
+
+.controls .controlBtn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  background-color: thistle;
+}
+
+.controls .seek {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls .seek input {
+  width: 100%;
+}
+
+.controls .timestamp {
+  width: 100%;
+}
+
+.controls .timestamp p {
+}

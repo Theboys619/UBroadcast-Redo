@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubroadcast - Listening to Radio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h2 id="radioTitle">Radio Title</h2>
+  <p id="radioDescription">Description of radio</p>
+
+  <div class="controls">
+    <audio id="audioPlayer" autoplay>
+      <source src="<%= radio %>/live" type="audio/mpeg">
+    </audio>
+    <div class="controlBtn playbtn">Play</div>
+    <div class="controlBtn pausebtn">Pause</div>
+    <div class="seek">
+      <input id="seek_1" type="range" value="0" max="" />
+    </div>
+    <div class="timestamp"><p>0:05 / 1:58</p></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
