@@ -5,17 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ubroadcast - Dashboard</title>
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <aside>
-    <nav>
-      <h2>Dashboard</h2>
-      <ul>
-        <li>Create Radio</li>
-        <li>Radio List</li>
-        <li>Upload Music</li>
-      </ul>
-    </nav>
-  </aside>
+  <nav class="sidebar">
+    <h2>Dashboard</h2>
+    <ul class="v-buttonlist">
+      <a href="#create-radio"><li class="button item">Create Radio</li></a>
+      <a href="#radio-list"><li class="button item">Radio List</li></a>
+      <a href="#upload-music"><li class="button item">Upload Music</li></a>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div>
+        <label for="radio">Radio Name</label>
+        <input type="text" id="radio" name="radio" />
+      </div>
+      <button id="radioCreate">Create Radio</button>
+    </div>
+  </main>
 </body>
 </html>
